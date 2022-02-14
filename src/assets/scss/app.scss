@@ -1,0 +1,32 @@
+
+// @mixin theme() {
+//    background: #000;
+//    color: black;
+// }
+
+// .title {
+//    @include theme;
+//    margin-top: 20px;
+// }
+
+// основные стили
+@import "./main/reset.scss";
+@import "./main/vars.scss";
+@import "./main/main.scss";
+
+
+
+// стили компонентов
+// header...........
+@import "./componets/header";
+
+// MAIN.........
+//- Section description..........
+@import "./componets/sec__description.scss";
+//- Section passion..........
+@import "./componets/sec__passion.scss";
+// Section menupos
+@import "./componets/sec__menupos.scss";
+
+// footer...........
+@import "./componets/footer"
