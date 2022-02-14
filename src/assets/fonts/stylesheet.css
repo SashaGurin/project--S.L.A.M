@@ -1,0 +1,71 @@
+@font-face {
+    font-family: 'Roboto';
+    src: url('subset-Roboto-Bold.woff2') format('woff2'),
+        url('subset-Roboto-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('subset-Roboto-BoldItalic.woff2') format('woff2'),
+        url('subset-Roboto-BoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('subset-Roboto-Regular.woff2') format('woff2'),
+        url('subset-Roboto-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('subset-Montserrat-Regular.woff2') format('woff2'),
+        url('subset-Montserrat-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'HeliosC';
+    src: url('subset-HeliosC.woff2') format('woff2'),
+        url('subset-HeliosC.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'HeliosC';
+    src: url('subset-HeliosC-Bold.woff2') format('woff2'),
+        url('subset-HeliosC-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'HeliosC';
+    src: url('subset-HeliosC-BoldItalic.woff2') format('woff2'),
+        url('subset-HeliosC-BoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+
+
+
+
+
+
+
+

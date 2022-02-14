@@ -1,15 +1,17 @@
-// цвета основные
-$primerycolor-orange: #dc780b;
-$primery-orange_hover:#dc580b;
+// основные цвета
 $primerycolor-white: #fff;
-$primerycolor-black: #150c01;
-// /цвет фона футера
-$primerycolor-footer_bg: #252525;
+$primerycolor-black: #000;
+$primerycolor-gray:#828282;
+$primerycolor-black--item:#181717;
+$primerycolor-yellow:#FDCA33;
+$primerycolor-green: #8DC63F;
+$primerycolor-blue:#00C2CE;
+$primerycolor-siren:#894083;
 
 
-// ...........................................
 // основной шрифт
-$primery-font:"Roboto", sans-serif;
-//дполнительный шрифт
-$secondary-font: 'Philosopher',sans-serif;
-
+$font-heliosc:'HeliosC', sans-serif;
+// //дполнительный шрифт
+$font-roboto: 'Roboto', sans-serif;
+$font-mont: 'Montserrat', sans-serif;
+// $font-hellioscLight:

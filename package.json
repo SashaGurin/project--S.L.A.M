@@ -1,7 +1,7 @@
 {
   "name": "gulp-bollerplate",
   "version": "1.0.0",
-  "description": "",
+  "hero": "",
   "main": "gulpfile.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -30,7 +30,7 @@
     "gulp-uglify": "^3.0.2",
     "magnific-popup": "^1.1.0",
     "normalize.css": "^8.0.1",
-    "sass": "^1.45.1",
+    "sass": "^1.45.1"
   },
   "dependencies": {
     "swiper": "^7.4.1"

@@ -1,25 +1,51 @@
+<!-- header -->
 header.header
   .container
-    .header__iner
-      .header__iner-left
-        .header__logo.logo
-          a.logo-link(href="#")
-            img.logo-img(src="assets/imgs/logo.png", alt="картинка")
-        button.burger(type="button")
-          span.burger-item
-        .haeder__menu.menu
-          ul.menu-list
-            li.menu-item
-              a.menu-link(href="#") Homefer
-            li.menu-item
-              a.menu-link(href="#") About us
-            li.menu-item
-              a.menu-link(href="#") Menu
-            li.menu-item
-              a.menu-link(href="#") Features
-            li.menu-item
-              a.menu-link(href="#") Contact us
-      .header__iner-right
-        a.header__btn.btn Booking Now
+    .header__top
+      .header__top-left
+        nav.header__nav.nav
+          ul.nav-list
+            li.nav-item
+              a(href="#").nav-link О компании
+            li.nav-item
+              a(href="#").nav-link Потребителям
+            li.nav-item
+              a(href="#").nav-link Магазины
+            li.nav-item
+              a(href="#").nav-link Контакты
+      .header__top-right
+        .header__top-right_item
+          a(href="mail:info@info.com").item-link.mail info@info.com
+        .header__top-right_item
+          a(href="tel:+375296461616").item-link.tel +375(29)646-16-16
+        .header__top-right_item
+          a(href="#modal-recall").item-link.recall Обратный звонок
+        .header__top-right_item
+          a(href="#modal-enter").item-link.enter Войти
+
+    .header__bottom
+      .header__bottom-logo.logo
+        a(href="#").logo-link
+          img(src="assets/imgs/logo.svg", alt="logo")
+        P.header__bottom-text Разработка как спорт. |#[br] Важен только результат.
+      //- пересмотреть форму поиска
+      .header__bottom-search
+        form(action="#" id="form").header-form.form
+          button(type="submit" name="button-search" for="search" formmethod="post" form="form").form-btn
+            img(src="assets/imgs/search.svg", alt="button").form-btn__img
+          input(type="search" name="search" placeholder="Введите текст для поиска").form-search
+          button(type="reset" name="button-close" for="search" formmethod="get" form="form").form-btn
+            img(src="assets/imgs/close-search.svg", alt="button").form-btn__img
+      .header__bottom-cabinet.cabinet
+        a(href="#").cabinet__link.heart
+          img(src="assets/imgs/heart.svg", alt="")
+          | Избранное
+        a(href="#" data-count="3").cabinet__link.cart
+          img(src="assets/imgs/cart.svg", alt="")
+          | 20 888.50 р.
+
+
+
+
 
 

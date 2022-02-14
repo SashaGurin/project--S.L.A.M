@@ -4,21 +4,46 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>test__SLAM</title>
+    <link rel="stylesheet" href="/src/assets/fonts/stylesheet.css">
     <link rel="stylesheet" href="./assets/css/app.css">
   </head>
-  <body>
+  <body><!-- header -->
     <header class="header">
-      <menu><a href="./index.html">главная</a><a href="./about.html">о нас</a></menu>
-    </header>
-    <div class="item">
-      <div class="item-img"><img src="src='assets/imgs/1488399659_0_0_960_960_600x0_80_0_1_e38b72053fffa5d3d7e82d2fe116f0b3.jpeg"/>
-        <h6 class="item_title">сайт хороший <b>нашyyyy</b></h6>
-        <ul>
-          <li>пунк 1</li>
-          <li>пункт 2</li>
-        </ul>
+      <div class="container">
+        <div class="header__top">
+          <div class="header__top-left">
+            <nav class="header__nav nav">
+              <ul class="nav-list">
+                <li class="nav-item"><a class="nav-link" href="#">О компании</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Потребителям</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Магазины</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Контакты</a></li>
+              </ul>
+            </nav>
+          </div>
+          <div class="header__top-right">
+            <div class="header__top-right_item"><a class="item-link mail" href="mail:info@info.com">info@info.com</a></div>
+            <div class="header__top-right_item"><a class="item-link tel" href="tel:+375296461616">+375(29)646-16-16</a></div>
+            <div class="header__top-right_item"><a class="item-link recall" href="#modal-recall">Обратный звонок</a></div>
+            <div class="header__top-right_item"><a class="item-link enter" href="#modal-enter">Войти</a></div>
+          </div>
+        </div>
+        <div class="header__bottom">
+          <div class="header__bottom-logo logo"><a class="logo-link" href="#"><img src="assets/imgs/logo.svg" alt="logo"></a>
+            <P class="header__bottom-text">Разработка как спорт. |<br> Важен только результат.</P>
+          </div>
+          <div class="header__bottom-search">
+            <form class="header-form form" action="#" id="form">
+              <button class="form-btn" type="submit" name="button-search" for="search" formmethod="post" form="form"><img class="form-btn__img" src="assets/imgs/search.svg" alt="button"></button>
+              <input class="form-search" type="search" name="search" placeholder="Введите текст для поиска">
+              <button class="form-btn" type="reset" name="button-close" for="search" formmethod="get" form="form"><img class="form-btn__img" src="assets/imgs/close-search.svg" alt="button"></button>
+            </form>
+          </div>
+          <div class="header__bottom-cabinet cabinet"><a class="cabinet__link heart" href="#"><img src="assets/imgs/heart.svg" alt="">Избранное</a><a class="cabinet__link cart" href="#" data-count="3"><img src="assets/imgs/cart.svg" alt="">20 888.50 р.</a></div>
+        </div>
       </div>
-    </div>
+    </header>
+    <main class="main"></main>
   </body>
 </html>
