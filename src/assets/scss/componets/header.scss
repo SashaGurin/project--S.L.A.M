@@ -130,6 +130,12 @@
             color: $primerycolor-black;
           }
         }
+        &-btn {
+          transition: all 0.2s linear;
+          &:hover {
+            transform: scale(1.1);
+          }
+        }
         &-btn.search {
           position: absolute;
           left: 15px;
