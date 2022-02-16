@@ -5,13 +5,31 @@
     }
     .image-slider__image img {
         max-width: 100%;
+        // height: 100%;
     }
+    .image-slider__image{
+        position: relative;
 
+    }
+    .slider-title  {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        font-family: $font-roboto;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 64px;
+        line-height: 22px;
+        letter-spacing: 0.02em;
+        color: $primerycolor-white;
+        white-space: nowrap;
+    }
 }
-// .swiper {
-//     width: 800px;
-//     height: 500px;
-// }
+.swiper {
+    width: 1570px;
+    height: 400px;
+}
 //  .swiper-wrapper {
 //     flex-direction: row;
 //   }
