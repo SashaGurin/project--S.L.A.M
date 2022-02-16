@@ -1,35 +1,36 @@
 @import "../main/vars";
 .baner {
-    .image-slider__image {
-        text-align: center;
-    }
-    .image-slider__image img {
-        max-width: 100%;
-        // height: 100%;
-    }
-    .image-slider__image{
-        position: relative;
+  .image-slider__image {
+    text-align: center;
+    img {
+      max-width: 100%;
+      opacity: 0.9;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      width: 100%;
+      height: 100%;
 
     }
-    .slider-title  {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%,-50%);
-        font-family: $font-roboto;
-        font-style: normal;
-        font-weight: bold;
-        font-size: 64px;
-        line-height: 22px;
-        letter-spacing: 0.02em;
-        color: $primerycolor-white;
-        white-space: nowrap;
+    .slider-title {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-family: $font-roboto;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 64px;
+      line-height: 22px;
+      letter-spacing: 0.02em;
+      color: $primerycolor-white;
+      white-space: nowrap;
+      z-index: 3;
     }
+  }
 }
 .swiper {
-    width: 1570px;
-    height: 400px;
+  max-width: 1570px;
+  height: 800px;
 }
-//  .swiper-wrapper {
-//     flex-direction: row;
-//   }
