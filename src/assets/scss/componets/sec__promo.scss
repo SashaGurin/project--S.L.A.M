@@ -9,6 +9,17 @@
     color: $primerycolor-siren;
   }
 }
+.new-box__btn-link {
+  padding: 12px 16px;
+  font-family: $font-heliosc;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 15px;
+  // line-height: 22px;
+  text-align: center;
+  display: inline-block;
+  border-radius: 50px;
+}
 .promo {
   padding-top: 51px;
   color: black;
@@ -17,7 +28,7 @@
   }
   &__wrapper {
     display: flex;
-    justify-content:space-between;
+    justify-content: space-between;
     flex-wrap: wrap;
     margin: 0 -15px;
   }
@@ -35,11 +46,12 @@
       display: flex;
       flex-direction: column;
       justify-content: space-between;
-      padding: 46px 20px 22px 20px;
+      padding: 46px 20px 0px 20px;
       transition: transform 0.2s linear;
       filter: drop-shadow(0px 3px 24px rgba(0, 0, 0, 0.08));
       border-radius: 22px 0px;
-      background-color:$primerycolor-white;
+      background-color: $primerycolor-white;
+      position: relative;
       &:hover {
         transform: translate(0, -5%);
         // cursor: pointer;
@@ -126,6 +138,7 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
+      padding-bottom: 22px;
       .price {
         display: flex;
         align-items: flex-end;
@@ -147,6 +160,75 @@
           text-decoration-line: line-through;
           color: $primerycolor-gray;
           margin-left: 6px;
+        }
+      }
+    }
+    .promo_new-box {
+      margin-bottom: 17px;
+      .new-box__form {
+        margin-bottom: 12px;
+        .form-new {
+          position: relative;
+
+          &__input {
+            background: #fafafa;
+            border-radius: 50px;
+            width: 100%;
+            height: 40px;
+            text-align: center;
+            border: none;
+            outline: none;
+          }
+          &__minus-btn {
+            position: absolute;
+            left: 16px;
+            top: calc(50% - 20px);
+            height: 100%;
+            border: 0;
+            outline: 0;
+            &:hover {
+              cursor: pointer;
+              path {
+                fill: #ff8600;
+              }
+            }
+          }
+          &__plus-btn {
+            position: absolute;
+            right: 16px;
+            top: calc(50% - 20px);
+            height: 100%;
+            border: 0;
+            outline: 0;
+            transition: all 0.5s linear;
+            &:hover {
+              cursor: pointer;
+              path {
+                fill: #ff8600;
+              }
+            }
+          }
+        }
+      }
+      .new-box__btn {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .left-btn {
+          border: 1px solid $primerycolor-siren;
+          box-sizing: border-box;
+
+          color: $primerycolor-siren;
+        }
+        .right-btn {
+          // max-width: 110px;
+          // width: 100%;
+          border: 1px solid transparent;
+          background: $primerycolor-siren;
+          color: $primerycolor-white;
+          // padding-right: 17px;
+
+
         }
       }
     }
