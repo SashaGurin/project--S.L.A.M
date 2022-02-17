@@ -157,7 +157,17 @@
     &-cabinet {
       display: flex;
       align-items: center;
-      .cabinet__link {
+
+      .cabinet__link + .cabinet__link {
+        margin-left: 51px;
+      }
+      .cabinet-img {
+        margin-right: 16px;
+      }
+    }
+  }
+}
+.cabinet__link {
         display: flex;
         align-items: center;
         white-space: nowrap;
@@ -178,12 +188,3 @@
           fill: #ff8700;
         }
       }
-      .cabinet__link + .cabinet__link {
-        margin-left: 51px;
-      }
-      .cabinet-img {
-        margin-right: 16px;
-      }
-    }
-  }
-}

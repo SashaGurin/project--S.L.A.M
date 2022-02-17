@@ -1,0 +1,41 @@
+mixin item__promo(img,status1,status2,status3,subtitle,codespan,codetext,title,ne,old,img_cart)
+  .promo__column
+    .promo__item
+      .promo__img-box
+        img(src=img alt="картинка").img-promo
+        .status__box
+          span.status-span(class!=attributes.class)=status1
+          span.status-span(class!=attributes.class)=status2
+          span.status-span(class!=attributes.class)=status3
+      .promo__title-box
+        .code__box
+          span.code-span(class!=attributes.class)=codespan
+          p.code-text=codetext
+        h4.promo-title=title
+      .promo__price-box
+        .price
+          p.price-new=ne
+          p.price-old=old
+        a(href="#").promo_price-link.cabinet__link
+          <svg width="30" height="32" viewBox="0 0 30 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M1.16346 0.379822C0.589935 0.379822 0.125 0.844757 0.125 1.41828C0.125 1.99181 0.589935 2.45674 1.16346 2.45674H5.31731C6.27319 2.45674 7.04808 3.23164 7.04808 4.18751V22.2308C7.04808 22.8043 7.51301 23.2692 8.08654 23.2692H25.2727C26.564 23.2692 27.7673 22.6148 28.4691 21.5308L28.9282 20.8216C29.9719 19.2094 28.8147 17.0817 26.8941 17.0817H12.1971C11.6236 17.0817 11.1587 17.5467 11.1587 18.1202C11.1587 18.6937 11.6236 19.1587 12.1971 19.1587H26.8941C27.1685 19.1587 27.3338 19.4626 27.1847 19.6929L26.7256 20.4021C26.4066 20.8948 25.8597 21.1923 25.2727 21.1923H9.125V4.18751C9.125 2.08458 7.42024 0.379822 5.31731 0.379822H1.16346ZM10.0769 25.3462C8.35634 25.3462 6.96154 26.741 6.96154 28.4616C6.96154 30.1821 8.35634 31.5769 10.0769 31.5769C11.7975 31.5769 13.1923 30.1821 13.1923 28.4616C13.1923 26.741 11.7975 25.3462 10.0769 25.3462ZM25.3077 25.3462C23.5871 25.3462 22.1923 26.741 22.1923 28.4616C22.1923 30.1821 23.5871 31.5769 25.3077 31.5769C27.0283 31.5769 28.4231 30.1821 28.4231 28.4616C28.4231 26.741 27.0283 25.3462 25.3077 25.3462ZM9.03846 28.4616C9.03846 27.888 9.5034 27.4231 10.0769 27.4231C10.6504 27.4231 11.1154 27.888 11.1154 28.4616C11.1154 29.0351 10.6504 29.5 10.0769 29.5C9.5034 29.5 9.03846 29.0351 9.03846 28.4616ZM24.2692 28.4616C24.2692 27.888 24.7342 27.4231 25.3077 27.4231C25.8812 27.4231 26.3462 27.888 26.3462 28.4616C26.3462 29.0351 25.8812 29.5 25.3077 29.5C24.7342 29.5 24.2692 29.0351 24.2692 28.4616Z" fill="#894083"/>
+          </svg>
+          //- img(src=img_cart alt="cart").promo_price-img.cart
+      .promo_new-box.new-box
+        .new-box__form
+          form(action="#" id="form-new").form-new
+            button(type="submit" name="button-minus" for="minus" formmethod="post" form="form-new").minus-btn
+              a(href="#").minus-btn_link
+                <svg width="13" height="2" viewBox="0 0 13 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12.9963 0.857143C12.9963 1.33053 12.6125 1.71429 12.1391 1.71429H1.85342C1.38003 1.71429 0.996277 1.33053 0.996277 0.857143C0.996277 0.383756 1.38003 0 1.85342 0H12.1391C12.6125 0 12.9963 0.383756 12.9963 0.857143Z" fill="#894083"/>
+                </svg>
+            input(type="text" name="search")
+            button(type="submit" name="button-plus" for="plus" formmethod="post" form="form-new").plus-btn
+              <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12.9963 6C12.9963 6.47339 12.6125 6.85714 12.1391 6.85714H7.85342V11.1429C7.85342 11.6162 7.46966 12 6.99628 12C6.52289 12 6.13913 11.6162 6.13913 11.1429V6.85714H1.85342C1.38003 6.85714 0.996277 6.47339 0.996277 6C0.996277 5.52661 1.38003 5.14286 1.85342 5.14286H6.13913V0.857144C6.13913 0.383757 6.52289 0 6.99628 0C7.46966 0 7.85342 0.383756 7.85342 0.857143V5.14286H12.1391C12.6125 5.14286 12.9963 5.52661 12.9963 6Z" fill="#894083"/>
+              </svg>
+        .new-box__btn
+          a(href="#").new-box__btn-link.left-link Купить в 1 клик
+          a(href="#").new-box__btn-link.right-link В корзину
+
+

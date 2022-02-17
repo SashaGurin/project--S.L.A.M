@@ -6,15 +6,38 @@ section.baner
           .image-slider__image
             a(href="#").slider-link
               h1.slider-title Cлайдер первого экрана
-              img(src="assets/imgs/slide-1.jpg", alt="slide-1")
+              img(data-src="assets/imgs/slide-1.jpg", alt="slide-1").swiper-lazy
+              .swiper-lazy-preloader
         .image-slider__slide.swiper-slide
           .image-slider__image
-            a(href="#") .slider-link
+            a(href="#").slider-link
               h1.slider-title Cлайдер первого экрана
-              img(src="assets/imgs/blogs-2.jpg", alt="slide-2")
-      .swiper-pagination
-      .swiper-button-prev
-      .swiper-button-next
+              img(data-src="assets/imgs/blogs-2.jpg", alt="slide-2").swiper-lazy
+              .swiper-lazy-preloader
+        .image-slider__slide.swiper-slide
+          .image-slider__image
+            a(href="#").slider-link
+              h1.slider-title Cлайдер первого экрана
+              img(data-src="assets/imgs/slide-3.jpg", alt="slide-3").swiper-lazy
+              .swiper-lazy-preloader
+        .image-slider__slide.swiper-slide
+          .image-slider__image
+            a(href="#").slider-link
+              h1.slider-title Cлайдер первого экрана
+              img(data-src="assets/imgs/slide-4.jpg", alt="slide-4").swiper-lazy
+        .image-slider__slide.swiper-slide
+          .image-slider__image
+            a(href="#").slider-link
+              h1.slider-title Cлайдер первого экрана
+              img(data-src="assets/imgs/slide-5.jpg", alt="slide-5").swiper-lazy
+              .swiper-lazy-preloader
+
+      //- .swiper-pagination
+      .swiper-button-prev.image-slidere__prev
+        img(src="assets/imgs/slider-arrow__left.svg", alt="").img-prev
+
+      .swiper-button-next.image-slidere__next
+       img(src="assets/imgs/slider-arrow__right.svg", alt="").img-next
 
 
 

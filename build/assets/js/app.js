@@ -16,9 +16,20 @@ const swiper = new Swiper(".swiper", {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
   },
+  preloadImages: false,
+  // Enable lazy loading
+  lazy: true,
 
 
   // scrollbar: {
   //   el: '.swiper-scrollbar',
   // },
+});
+
+document.getElementsByClassName("swiper")[0].addEventListener("mouseover", function( ) {
+  swiper.autoplay.stop();
+});
+
+document.getElementsByClassName("swiper")[0].addEventListener("mouseout", function( ) {
+  swiper.autoplay.start();
 });
