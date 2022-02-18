@@ -10,7 +10,7 @@
   }
 }
 .new-box__btn-link {
-  padding: 12px 16px;
+  padding: 11px 16px;
   font-family: $font-heliosc;
   font-style: normal;
   font-weight: bold;
@@ -22,25 +22,30 @@
 }
 .promo {
   padding-top: 51px;
+  padding-bottom: 100px;
   color: black;
   &__title-box {
     margin-bottom: 71px;
+  }
+  &__iner {
+    margin: 0 137px;
   }
   &__wrapper {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    margin: 0 -15px;
+    margin: 0 -30px;
   }
   &__column {
-    flex: 0 0 25%;
+    flex: 0 1 25%;
     padding: 0 15px;
     // margin-bottom: 45px;
-    // max-width: 25%;
+    max-width: 25%;
 
-    // @media (max-width:995px) {
-    //   flex: 0 1 33% ;
-    // }
+    @media (max-width:1500px) {
+      flex: 0 1 33% ;
+      max-width: 33%;
+    }
     .promo__item {
       height: 100%;
       display: flex;
@@ -52,9 +57,12 @@
       border-radius: 22px 0px;
       background-color: $primerycolor-white;
       position: relative;
-      &:hover {
-        transform: translate(0, -5%);
-        // cursor: pointer;
+      // &:hover {
+      //   transform: translate(0, -5%);
+      //   // cursor: pointer;
+      // }
+      &:hover .promo_new-box {
+        display: block;
       }
     }
     .promo__img-box {
@@ -66,9 +74,10 @@
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        width: 100%;
+        // width: 100%;
         // height: 100%;
         z-index: -1;
+        object-fit: cover;
       }
       .status__box {
         display: flex;
@@ -114,6 +123,7 @@
           font-weight: normal;
           letter-spacing: 0.02em;
           color: $primerycolor-siren;
+          margin-right: 10px;
         }
         .code-span.code-span--not {
           color: #c74a2c;
@@ -139,9 +149,10 @@
       align-items: center;
       justify-content: space-between;
       padding-bottom: 22px;
+      margin-top: auto;
       .price {
-        display: flex;
-        align-items: flex-end;
+        // display: flex;
+        // align-items: flex-end;
         &-new {
           font-family: $font-heliosc;
           font-style: normal;
@@ -149,6 +160,8 @@
           font-size: 24px;
           line-height: 36px;
           color: $primerycolor-black--item;
+          margin-right: 6px;
+          display: inline-block;
         }
         &-old {
           font-family: $font-heliosc;
@@ -159,12 +172,15 @@
           letter-spacing: 0.01em;
           text-decoration-line: line-through;
           color: $primerycolor-gray;
-          margin-left: 6px;
+          display: inline-block;
+
+
         }
       }
     }
     .promo_new-box {
       margin-bottom: 17px;
+      display: none;
       .new-box__form {
         margin-bottom: 12px;
         .form-new {
@@ -217,8 +233,8 @@
         .left-btn {
           border: 1px solid $primerycolor-siren;
           box-sizing: border-box;
-
           color: $primerycolor-siren;
+          // margin-right: 8px;
         }
         .right-btn {
           // max-width: 110px;
