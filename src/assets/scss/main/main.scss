@@ -15,3 +15,19 @@ body {
     margin: 0 auto;
   }
 
+  .wrapper {
+    position: relative;
+    &::after {
+      content: "";
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      background-image:url(../imgs/slam.svg) ;
+      width: 600px;
+      height: 600px;
+      display: block;
+      z-index: -1;
+    }
+  }
+
+

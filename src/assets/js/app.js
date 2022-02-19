@@ -40,9 +40,6 @@ const myswiper2 = new Swiper(".promo-slider", {
   loop: true,
   slidesPerView: 4,
   spaceBetween: 20,
-  // autoplay: {
-  //   delay: 5000,
-  // },
 
   // If we need pagination
   pagination: {
