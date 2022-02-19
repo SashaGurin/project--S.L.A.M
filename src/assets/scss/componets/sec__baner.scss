@@ -24,12 +24,14 @@
       line-height: 68px;
       letter-spacing: 0.02em;
       color: $primerycolor-white;
-      // white-space: nowrap;
       z-index: 3;
+      width: 100%;
+      padding: 0px 110px;
+      text-align: center;
     }
   }
 }
-.swiper {
+.image-slider {
   max-width: 1600px;
 //   padding: 0 15px;
   height: 800px;
