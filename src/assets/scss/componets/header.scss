@@ -25,6 +25,10 @@
           letter-spacing: 0.02em;
           color: $primerycolor-white;
           white-space: nowrap;
+          transition: opacity 0.3s linear;
+          &:hover {
+            opacity: 0.5;
+          }
         }
       }
     }
