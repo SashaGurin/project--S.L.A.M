@@ -10,7 +10,7 @@
   }
 }
 .new-box__btn-link {
-  padding: 11px 16px;
+  padding: 10px 16px;
   font-family: $font-heliosc;
   font-style: normal;
   font-weight: bold;
@@ -20,6 +20,7 @@
   display: inline-block;
   border-radius: 50px;
 }
+
 .promo {
   padding-top: 51px;
   // padding-bottom: 200px;
@@ -30,6 +31,14 @@
   }
   .promo-slider__slide {
     padding: 20px 0px;
+    &:nth-child(3) {
+      .promo_price-link {
+        display: none;
+      }
+
+
+
+    }
   }
   .promo-slider__wrapper {
     // padding: 0px 10px;
@@ -39,8 +48,7 @@
     // margin: 0 -30px;
 
   }
-  .img-prev {
-  }
+
   &__title-box {
     margin-bottom: 51px;
   }
@@ -103,38 +111,33 @@
         top: 0;
         left: 0;
         position: absolute;
+
       }
+      .status__box.none {
+        display: none;
+      }
+
       .status-span {
         display: inline-block;
         // width: 45px;
         // height: 20px;
         background: $primerycolor-yellow;
-        // border-radius: 0px 0px 5px 0px;
-        color: $primerycolor-white;
-
         font-family: $font-heliosc;
         font-style: normal;
         font-weight: bold;
         font-size: 12px;
         line-height: 18px;
-        // font-feature-settings: 'pnum' on, 'lnum' on;
         color: $primerycolor-white;
-
-        // font-family: $font-heliosc;
-        // font-style: normal;
-        // font-weight: 600;
-        // font-size: 12px;
-        // line-height: 130%;
-        // // text-align: center;
-        // letter-spacing: 0.008em;
         border-radius: 16px 0px;
         padding: 3px 11px 1px 10px;
         margin-bottom: 1px;
-      }
 
+      }
+      .status-span.none-span {
+        display: none;
+      }
       .status-span.span-green {
         background: $primerycolor-green;
-
       }
       .status-span.span-blue {
         background: $primerycolor-blue;
@@ -207,6 +210,10 @@
           color: $primerycolor-gray;
           display: inline-block;
         }
+        .none {
+          display: none;
+        }
+
       }
     }
     .promo_new-box {
@@ -279,4 +286,9 @@
       }
     }
   }
+  .none {
+    display: none;
+
+  }
+
 }

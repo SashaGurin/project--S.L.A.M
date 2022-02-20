@@ -1,4 +1,5 @@
 @import "../main/vars";
+
 .header {
   &__top {
     display: flex;
@@ -161,6 +162,7 @@
       .cabinet__link + .cabinet__link {
         margin-left: 51px;
       }
+
       .cabinet-img {
         margin-right: 16px;
       }
@@ -168,23 +170,51 @@
   }
 }
 .cabinet__link {
-        display: flex;
-        align-items: center;
-        white-space: nowrap;
-        font-family: $font-heliosc;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 15px;
-        letter-spacing: 0.02em;
-        color: #404040;
-        transition: all 0.2 linear;
-        &:hover {
-          text-decoration: underline;
-        }
-        path {
-          transition: all 0.2 linear;
-        }
-        &:hover path {
-          fill: #ff8700;
-        }
-      }
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+  font-family: $font-heliosc;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  letter-spacing: 0.02em;
+  color: #404040;
+  transition: all 0.2 linear;
+
+  &:hover {
+    text-decoration: underline;
+  }
+  path {
+    transition: all 0.2 linear;
+  }
+  &:hover path {
+    fill: #ff8700;
+  }
+  &:hover ::after {
+    background: red;
+  }
+}
+.cabinet__link.basket {
+  position: relative;
+  &::after {
+    content: attr(data-count);
+    width: 21px;
+    height: 15px;
+    background: $primerycolor-siren;
+    border-radius: 100px;
+    position: absolute;
+    left: 12px;
+    top: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Acrom;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 18px;
+    text-align: center;
+    color: $primerycolor-white;
+  }
+}
