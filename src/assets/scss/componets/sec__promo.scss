@@ -31,6 +31,7 @@
   }
   .promo-slider__slide {
     padding: 20px 0px;
+    // height: auto;
   }
   .promo-slider__wrapper {
     // padding: 0px 10px;
@@ -38,6 +39,8 @@
     // justify-content: space-between;
     // flex-wrap: wrap;
     // margin: 0 -30px;
+    padding: 120px 0px;
+
 
   }
 
@@ -46,6 +49,7 @@
   }
   &__iner {
     margin: 0 127px;
+    // display: flex;
   }
   &__column {
     flex: 0 1 25%;
@@ -53,6 +57,7 @@
     // margin-bottom: 45px;
     max-width: 100%;
     position: relative;
+    height: 100%;
 
     // @media (max-width: 1500px) {
     //   flex: 0 1 33%;
@@ -88,6 +93,7 @@
       display: flex;
       flex-direction: column;
       justify-content: space-between;
+      height: 100%;
     }
     .promo__img-box {
       // margin-bottom: 47px;
@@ -102,20 +108,21 @@
         transform: translate(-50%, -50%);
         z-index: -1;
         object-fit: cover;
+        max-width: 100%;
         // width: auto;
         // height: auto;
-        // max-width: 100%;
+
         // max-height: 100%;
       }
-      .opacity-img{
+      .opacity-img {
         opacity: 0.5;
       }
       .status__box {
-        display:flex;
+        display: flex;
         flex-direction: column;
         align-items: flex-start;
-        top: 0;
-        left: 0;
+        top: -5px;
+        left: -10px;
         position: absolute;
       }
       .heart-love {
@@ -129,11 +136,8 @@
           background-image: url(/assets/imgs/heart-bg.svg);
           background-repeat: no-repeat;
           background-size: contain;
-
         }
-
       }
-
 
       .status-span {
         display: inline-block;
@@ -175,6 +179,7 @@
           letter-spacing: 0.02em;
           color: $primerycolor-siren;
           margin-right: 10px;
+          white-space: nowrap;
         }
         .code-span.code-span--not {
           color: #c74a2c;
@@ -182,6 +187,7 @@
         .code-text {
           font-weight: 300;
           color: $primerycolor-gray;
+          white-space: nowrap;
         }
       }
       .promo-title {
@@ -193,6 +199,9 @@
         letter-spacing: 0.02em;
         color: $primerycolor-black--item;
         margin-bottom: 40px;
+        // min-height: 60px;
+        height: 60px;
+        overflow: hidden;
       }
     }
     .promo__price-box {
@@ -202,8 +211,9 @@
       padding-bottom: 22px;
       margin-top: auto;
       .price {
-        // display: flex;
-        // align-items: flex-end;
+        display: flex;
+        align-items: flex-end;
+        flex-wrap: nowrap;
         &-new {
           font-family: $font-heliosc;
           font-style: normal;
@@ -213,6 +223,7 @@
           color: $primerycolor-black--item;
           margin-right: 6px;
           display: inline-block;
+          white-space: nowrap;
         }
         &-old {
           font-family: $font-heliosc;
@@ -223,7 +234,8 @@
           letter-spacing: 0.01em;
           text-decoration-line: line-through;
           color: $primerycolor-gray;
-          display: inline-block;
+          // display: inline-block;
+          white-space: nowrap;
         }
         .none {
           display: none;
@@ -303,5 +315,4 @@
       }
     }
   }
-
 }
