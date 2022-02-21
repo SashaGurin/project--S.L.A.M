@@ -33,18 +33,28 @@
 }
 .promo_arrow-next {
   margin-right: 5px;
-
  }
-
-
 
 .promo {
   padding-top: 51px;
+  // padding-bottom: 82px;
   // padding-bottom: 200px;
   color: black;
   .promo-slider {
     padding: 0 10px;
     padding-bottom: 113px;
+    .swiper-pagination-bullet{
+      margin:0px 14px;
+      width: 8px;
+      height: 8px;
+    }
+    .swiper-pagination-bullet-active {
+     width: 8px;
+     height: 8px;
+     background: #FF8700;
+     opacity: 1;
+
+    }
   }
   .promo-slider__slide {
     padding: 20px 0px;
@@ -66,7 +76,6 @@
   //   position: relative;
   //   bottom: 349px;
   // }
-
 
   &__title-box {
     margin-bottom: 51px;
@@ -120,11 +129,12 @@
       height: 100%;
     }
     .promo__img-box {
-      // margin-bottom: 47px;
+
       position: relative;
       width: 245px;
       height: 245px;
       margin: 0 auto;
+      margin-bottom: 10px;
       img {
         position: absolute;
         top: 50%;

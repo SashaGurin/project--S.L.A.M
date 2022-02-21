@@ -33,19 +33,18 @@ document.getElementsByClassName("image-slider")[0].addEventListener("mouseout", 
   swiper.autoplay.start();
 });
 
-
 const myswiper2 = new Swiper(".promo-slider", {
   // Optional parameters
-  // direction: 'vertical',
   loop: true,
   slidesPerView: 4,
+  slidesPerGroup: 10,
   spaceBetween: 20,
 
   // If we need pagination
   pagination: {
     el: ".swiper-pagination",
     type: 'bullets',
-    // clickable: true
+    clickable: true
   },
 
   // Navigation arrows
@@ -53,8 +52,8 @@ const myswiper2 = new Swiper(".promo-slider", {
     nextEl: ".swiper-button-next.promo--slider.promo_arrow-next",
     prevEl: " .swiper-button-prev.promo--slider.promo_arrow-prev",
   },
-  preloadImages: false,
-  // Enable lazy loading
+  preloadImages: true,
+
   lazy: true,
 
 
