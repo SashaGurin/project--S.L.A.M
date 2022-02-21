@@ -50,8 +50,8 @@ const myswiper2 = new Swiper(".promo-slider", {
 
   // Navigation arrows
   navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
+    nextEl: ".swiper-button-next.promo--slider.promo_arrow-next",
+    prevEl: " .swiper-button-prev.promo--slider.promo_arrow-prev",
   },
   preloadImages: false,
   // Enable lazy loading
