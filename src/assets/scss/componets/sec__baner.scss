@@ -36,9 +36,14 @@
       }
       @media (max-width: 995px) {
         font-size: 38px;
+        line-height: 40px;
       }
       @media (max-width: 768px) {
         font-size: 30px;
+      }
+      @media (max-width: 588px) {
+        font-size: 20px;
+        line-height: 23px;
       }
     }
   }
@@ -55,6 +60,9 @@
   @media (max-width: 768px) {
     height: 400px;
   }
+  @media (max-width: 588px) {
+    height: 300px;
+   }
 }
 .swiper-button-prev:after, .swiper-rtl .swiper-button-next:after,
 .swiper-button-next:after, .swiper-rtl .swiper-button-prev:after {
@@ -62,7 +70,36 @@
 }
 .image-slidere__prev {
     margin-left: 51px;
+    @media (max-width: 768px) {
+      margin-left: 31px;
+    }
+    @media (max-width: 588px) {
+      margin-left: 21px;
+    }
+    img {
+      @media (max-width: 995px) {
+        width: 180%;
+      }
+      @media (max-width: 768px) {
+        width: 150%;
+      }
+    }
+
 }
 .image-slidere__next {
     margin-right: 51px;
+    @media (max-width: 768px) {
+      margin-right: 31px;
+    }
+    @media (max-width: 588px) {
+      margin-right: 21px;
+    }
+    img {
+      @media (max-width: 995px) {
+        width: 180%;
+      }
+      @media (max-width: 768px) {
+        width: 150%;
+      }
+    }
 }
