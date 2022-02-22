@@ -24,17 +24,14 @@
   position: absolute;
   margin-right: 0px;
   margin-left: 0px;
-
-  top: 77%;
+  top: 68%;
 }
 .promo_arrow-prev {
  margin-left: 5px;
-
 }
 .promo_arrow-next {
   margin-right: 5px;
  }
-
 .promo {
   padding-top: 51px;
   // padding-bottom: 82px;
@@ -42,7 +39,7 @@
   color: black;
   .promo-slider {
     padding: 0 10px;
-    padding-bottom: 45px;
+
     .swiper-pagination-bullet{
       margin:0px 14px;
       width: 8px;
@@ -70,6 +67,7 @@
     // flex-wrap: wrap;
     // margin: 0 -30px;
     // padding: 120px 0px;
+    margin-bottom: 37px;
   }
   //  .promo--slider {
   //   //  right: 0;

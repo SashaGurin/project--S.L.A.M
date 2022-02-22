@@ -1,5 +1,11 @@
 @import "../main/vars";
 .form-style {
+  padding-bottom:43px;
+  .form-style__title {
+    font-size: 36px;
+    padding-top: 86px;
+  }
+
   .form-style__form {
     display: flex;
     align-items: center;
@@ -76,12 +82,13 @@
       letter-spacing: 0.02em;
       color: #bdbdbd;
       display: block;
-      &:hover,
-      &:active,
-      &:focus-visible,
-      &:focus {
+      &:hover {
         color: $primerycolor-black--item;
       }
+
+    }
+    label.on {
+      color: $primerycolor-black--item;
     }
     label input[type="checkbox"] {
       position: absolute;
