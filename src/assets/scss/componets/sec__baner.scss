@@ -28,13 +28,33 @@
       width: 100%;
       padding: 0px 110px;
       text-align: center;
+      @media (max-width: 1400px) {
+        font-size: 54px;
+      }
+      @media (max-width: 1200px) {
+        font-size: 50px;
+      }
+      @media (max-width: 995px) {
+        font-size: 38px;
+      }
+      @media (max-width: 768px) {
+        font-size: 30px;
+      }
     }
   }
 }
 .image-slider {
   max-width: 1600px;
-//   padding: 0 15px;
   height: 800px;
+  @media (max-width: 1400px) {
+    height: 630px;
+  }
+  @media (max-width: 995px) {
+    height: 500px;
+  }
+  @media (max-width: 768px) {
+    height: 400px;
+  }
 }
 .swiper-button-prev:after, .swiper-rtl .swiper-button-next:after,
 .swiper-button-next:after, .swiper-rtl .swiper-button-prev:after {

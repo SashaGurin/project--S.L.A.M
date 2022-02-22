@@ -29,6 +29,8 @@ document
     swiper.autoplay.start();
   });
 
+
+// слайдер promo......
 const myswiper2 = new Swiper(".promo-slider", {
   loop: true,
   slidesPerView: 4,
@@ -55,7 +57,7 @@ const myswiper2 = new Swiper(".promo-slider", {
 });
 
 // $(document).ready(function () {
-//   $(".input-checkbox").click(function () {
+//   $(".chbx").click(function () {
 //     $(this).parent().toggleClass("on");
 //   });
 // });

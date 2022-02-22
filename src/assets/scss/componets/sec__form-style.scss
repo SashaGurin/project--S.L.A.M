@@ -1,11 +1,10 @@
 @import "../main/vars";
 .form-style {
-  padding-bottom:43px;
+  padding-bottom: 43px;
   .form-style__title {
     font-size: 36px;
     padding-top: 86px;
   }
-
   .form-style__form {
     display: flex;
     align-items: center;
@@ -13,7 +12,6 @@
   .form-left {
     label {
       display: block;
-
       position: relative;
       padding-left: 30px;
       cursor: pointer;
@@ -41,7 +39,7 @@
       border: 1px solid $primerycolor-gray;
       background-color: $primerycolor-white;
       border-radius: 50%;
-      transition: 0.3s background-color;
+      transition: background-color 0.3s;
     }
     label span:after {
       content: "";
@@ -67,12 +65,11 @@
     }
   }
   .form-right {
-      margin-left: 98px;
+    margin-left: 98px;
     label {
       position: relative;
       padding-left: 30px;
       margin-bottom: 5px;
-
       cursor: pointer;
       font-family: $font-heliosc;
       font-style: normal;
@@ -83,19 +80,18 @@
       color: #bdbdbd;
       display: block;
       &:hover {
-        color: $primerycolor-black--item;
       }
-
     }
-    label.on {
+
+    input[type="checkbox"]:checked + label {
       color: $primerycolor-black--item;
     }
     label input[type="checkbox"] {
       position: absolute;
-
       opacity: 0;
       width: 0;
       height: 0;
+      color: $primerycolor-black--item;
     }
     label span {
       position: absolute;
@@ -105,7 +101,7 @@
       height: 20px;
       border: 1px solid $primerycolor-gray;
       background-color: $primerycolor-white;
-      transition: 0.3s background-color;
+      transition: background-color 0.3s;
     }
     label span:after {
       content: "";
