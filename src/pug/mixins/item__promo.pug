@@ -1,9 +1,9 @@
 mixin item__promo(img,status1,status2,status3,codespan,codetext,title,ne,old)
-  .promo__column.swiper-lazy
+  .promo__column
     .promo__item
       .promo__item-top
         .promo__img-box
-          img(src=img alt="картинка")(class!=attributes.classimg).img-promo
+          img(data-src=img alt="картинка").swiper-lazy(class!=attributes.classimg).img-promo
           .status__box
             span.status-span(class!=attributes.class1)=status1
             span.status-span.span-green(class!=attributes.class2)=status2

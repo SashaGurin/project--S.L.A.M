@@ -42,18 +42,21 @@
   color: black;
   .promo-slider {
     padding: 0 10px;
-    padding-bottom: 113px;
+    padding-bottom: 45px;
     .swiper-pagination-bullet{
       margin:0px 14px;
       width: 8px;
       height: 8px;
+      &:hover {
+        background: #FF8600;
+        opacity: 0.5;
+      }
     }
     .swiper-pagination-bullet-active {
      width: 8px;
      height: 8px;
      background: #FF8700;
      opacity: 1;
-
     }
   }
   .promo-slider__slide {
@@ -157,7 +160,7 @@
       }
       .heart-love {
         position: absolute;
-        right: 0;
+        right: -12px;
         top: 0;
         border: 0;
         outline: 0;
@@ -328,11 +331,17 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
+        .new-box__btn-link {
+          display: inline-block;
+          transition: all 0.3s linear;
+          &:hover {
+            opacity: 0.5;
+          }
+        }
         .left-btn {
           border: 1px solid $primerycolor-siren;
           box-sizing: border-box;
           color: $primerycolor-siren;
-          // margin-right: 8px;
         }
         .right-btn {
           // max-width: 110px;

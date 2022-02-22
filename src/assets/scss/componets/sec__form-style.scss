@@ -1,0 +1,126 @@
+@import "../main/vars";
+.form-style {
+  .form-style__form {
+    display: flex;
+    align-items: center;
+  }
+  .form-left {
+    label {
+      display: block;
+
+      position: relative;
+      padding-left: 30px;
+      cursor: pointer;
+      margin-bottom: 6px;
+      font-family: $font-heliosc;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 15px;
+      line-height: 22px;
+      letter-spacing: 0.02em;
+      color: $primerycolor-black--item;
+    }
+    label input[type="radio"] {
+      position: absolute;
+      opacity: 0;
+      width: 0;
+      height: 0;
+    }
+    label span {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 20px;
+      height: 20px;
+      border: 1px solid $primerycolor-gray;
+      background-color: $primerycolor-white;
+      border-radius: 50%;
+      transition: 0.3s background-color;
+    }
+    label span:after {
+      content: "";
+      position: absolute;
+      display: none;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background: #ff8700;
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+    }
+    label:hover span {
+      background-color: #ccc;
+    }
+    label input:checked ~ span {
+      border: 1px solid $primerycolor-gray;
+      background-color: $primerycolor-white;
+    }
+    label input:checked ~ span:after {
+      display: block;
+    }
+  }
+  .form-right {
+      margin-left: 98px;
+    label {
+      position: relative;
+      padding-left: 30px;
+      margin-bottom: 5px;
+
+      cursor: pointer;
+      font-family: $font-heliosc;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 15px;
+      line-height: 22px;
+      letter-spacing: 0.02em;
+      color: #bdbdbd;
+      display: block;
+      &:hover,
+      &:active,
+      &:focus-visible,
+      &:focus {
+        color: $primerycolor-black--item;
+      }
+    }
+    label input[type="checkbox"] {
+      position: absolute;
+
+      opacity: 0;
+      width: 0;
+      height: 0;
+    }
+    label span {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 20px;
+      height: 20px;
+      border: 1px solid $primerycolor-gray;
+      background-color: $primerycolor-white;
+      transition: 0.3s background-color;
+    }
+    label span:after {
+      content: "";
+      position: absolute;
+      display: none;
+      left: 6px;
+      top: 2px;
+      width: 7px;
+      height: 11px;
+      border: solid $primerycolor-white;
+      border-width: 0 2px 2px 0;
+      transform: rotate(45deg);
+    }
+    label:hover span {
+      background-color: #ccc;
+    }
+    label input:checked ~ span {
+      background: #ff8700;
+      border: none;
+    }
+    label input:checked ~ span:after {
+      display: block;
+    }
+  }
+}
