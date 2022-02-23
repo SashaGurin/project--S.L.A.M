@@ -4,6 +4,8 @@ header.header
     .header__top
       .header__top-left
         nav.header__nav.nav
+          button(type='button').burger
+            span.burger-item
           ul.nav-list
             li.nav-item
               a(href="#").nav-link О компании
@@ -37,7 +39,6 @@ header.header
         a(href="#").logo-link
           img(src="assets/imgs/logo.svg", alt="logo")
         P.logo-text Разработка как спорт.#[br] Важен только результат.
-      //- пересмотреть форму поиска
       .header__bottom-search
         form(action="#" id="form-header").header-form.form
           button(type="submit" name="button-search" for="search" formmethod="post" form="form-header").form-btn.search

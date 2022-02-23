@@ -4,6 +4,10 @@
   .form-style__title {
     font-size: 36px;
     padding-top: 86px;
+    @media (max-width: 768px) {
+      font-size: 31px;
+      padding-top: 46px;
+    }
   }
   .form-style__form {
     display: flex;
@@ -66,6 +70,9 @@
   }
   .form-right {
     margin-left: 98px;
+    @media (max-width: 588px) {
+      margin-left: 50px;
+    }
     label {
       position: relative;
       padding-left: 30px;
