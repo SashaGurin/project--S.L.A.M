@@ -1,33 +1,38 @@
 @import "../main/vars.scss";
 
 body {
-    font-family: $font-heliosc;
-    font-size: 15px;
-    font-weight: 400;
-    color: $primerycolor-white;
-    background-color: $primerycolor-white;
+  font-family: $font-heliosc;
+  font-size: 15px;
+  font-weight: 400;
+  color: $primerycolor-white;
+  background-color: $primerycolor-white;
+}
+
+.container {
+  width: 100%;
+  max-width: 1630px;
+  padding: 0px 15px;
+  margin: 0 auto;
+}
+
+.wrapper {
+  position: relative;
+  &::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    background-image: url(../imgs/slam.svg);
+    width: 600px;
+    height: 600px;
+    display: block;
+    z-index: -1;
   }
+}
 
-  .container {
-    width: 100%;
-    max-width: 1600px;
-    padding: 0px 15px;
-    margin: 0 auto;
-  }
-
-  .wrapper {
-    position: relative;
-    &::after {
-      content: "";
-      position: absolute;
-      right: 0;
-      bottom: 0;
-      background-image:url(../imgs/slam.svg) ;
-      width: 600px;
-      height: 600px;
-      display: block;
-      z-index: -1;
-    }
-  }
-
-
+input::-webkit-search-decoration,
+input::-webkit-search-cancel-button,
+input::-webkit-search-results-button,
+input::-webkit-search-results-decoration {
+  display: none;
+}
