@@ -36,3 +36,20 @@ input::-webkit-search-results-button,
 input::-webkit-search-results-decoration {
   display: none;
 }
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+input[type='number'] {
+  -moz-appearance: textfield;
+}
+input[type="number"]:hover,
+input[type="number"]:focus {
+  -moz-appearance: number-input;
+}
+
+
+

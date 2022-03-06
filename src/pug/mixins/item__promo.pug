@@ -3,7 +3,8 @@ mixin item__promo(img,status1,status2,status3,codespan,codetext,title,ne,old)
     .promo__item
       .promo__item-top
         .promo__img-box
-          img(data-src=img alt="картинка").swiper-lazy(class!=attributes.classimg).img-promo
+          a(href="#").img__link
+            img(data-src=img alt="картинка").swiper-lazy(class!=attributes.classimg).img-promo
           .status__box
             span.status-span(class!=attributes.class1)=status1
             span.status-span.span-green(class!=attributes.class2)=status2
@@ -17,7 +18,7 @@ mixin item__promo(img,status1,status2,status3,codespan,codetext,title,ne,old)
           .code__box
             span.code-span(class!=attributes.classred)=codespan
             p.code-text=codetext
-          h4.promo-title=title
+          a(href="#").promo-title=title
         .promo__price-box
           .price
             p.price-new=ne

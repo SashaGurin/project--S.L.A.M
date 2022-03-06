@@ -4,10 +4,10 @@ const swiper = new Swiper(".image-slider", {
     delay: 5000,
   },
 
-  pagination: {
-    el: ".swiper-pagination",
-    type: "bullets",
-  },
+  // pagination: {
+  //   el: ".swiper-pagination",
+  //   type: "bullets",
+  // },
 
   navigation: {
     nextEl: ".swiper-button-next",
@@ -32,17 +32,12 @@ document
 // слайдер promo......
 const myswiper2 = new Swiper(".promo-slider", {
   loop: true,
-  slidesPerView: 4,
-  slidesPerGroup: 10,
+  slidesPerView: 1,
+  // slidesPerGroup: 10,
   spaceBetween: 20,
   // breakpointsInverse: true,
   // dynamicMainBullets: 5,
-  //   breakpoints: {
-  // 768: {
-  //     slidesPerView: 2,
-  //     spaceBetween: 20,
-  //      },
-  //  }
+
 
   pagination: {
     el: ".swiper-pagination",
