@@ -149,6 +149,11 @@
       &:hover .heart-love {
         display: block;
       }
+      .promo_new-box {
+        @media (max-width: 1024px) {
+         display: block;
+        }
+      }
     }
     .promo__item-top {
       display: flex;
@@ -169,7 +174,6 @@
         &:hover {
           cursor: pointer;
         }
-
       }
       img {
         position: absolute;
@@ -204,7 +208,6 @@
           background-size: contain;
         }
       }
-
       .status-span {
         display: inline-block;
         background: $primerycolor-yellow;
