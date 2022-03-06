@@ -1,9 +1,13 @@
 @import "../main/vars";
 .form-style {
   padding-bottom: 43px;
+  .section__title-box {
+    margin-bottom: 30px;
+  }
   .form-style__title {
     font-size: 36px;
     padding-top: 86px;
+
     @media (max-width: 768px) {
       font-size: 31px;
       padding-top: 46px;

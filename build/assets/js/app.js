@@ -42,6 +42,7 @@ const myswiper2 = new Swiper(".promo-slider", {
   pagination: {
     el: ".swiper-pagination",
     type: "bullets",
+    dynamicBullets: true,
     clickable: true,
   },
 
@@ -89,7 +90,6 @@ const myswiper2 = new Swiper(".promo-slider", {
     el: ".swiper-scrollbar",
   },
 });
-
 
 
 $(document).ready(function () {
