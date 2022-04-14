@@ -1,4 +1,1 @@
- https://sashagurin.github.io/test__slam/build/
- 
- -gulp
- upt
+https://sashagurin.github.io/project--S.L.A.M/build/
